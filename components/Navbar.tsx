@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Navbar() {
   return (
     <div>
-     <div className="flex items-center gap-4">
+     <div className="flex items-center gap-4 justify-between">
         <Link href="/">
         <Image src="/gbjlogo.png" alt="logo" width="200" height="200" />
 
@@ -17,6 +17,8 @@ export default function Navbar() {
         <Link href="/Career" className="text-black hover:underline">Career</Link>
         <Link href="/Blog" className="text-black hover:underline">Blog</Link>
       </div>
+
+      {/* TODO: add buttons and stuff  */}
     </div>
     </div>
   )
