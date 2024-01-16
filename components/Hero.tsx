@@ -23,12 +23,12 @@ function Hero() {
       <div>
         <Card className="flex justify flex-col">
           <CardHeader>
-            <CardTitle className="font-semibold justify text-7xl ">
+            <CardTitle className="font-semibold justify text-7xl">
               <p>Supercharge your</p>
               <p>Business Growth</p>
             </CardTitle>
           </CardHeader>
-          <CardContent className="font-medium justify font-size:22px line-height:40px text-pretty max-w-prose">
+          <CardContent className="font-medium justify text-xl text-pretty max-w-prose">
             <p>
               We&apos;re a top business devlopment firm, experts in crafting
               SaaS & PaaS solutions.
@@ -58,7 +58,7 @@ function Hero() {
               </HoverCardContent>
             </HoverCard>
           </CardFooter>
-          <CardFooter className="flex justify relative gap-4">
+          <CardFooter className="flex justify drelative gap-4">
             <Image src="/google-logo.svg" alt="google" width="64" height="22" />
             <Image
               src="/facebook-logo.svg"
