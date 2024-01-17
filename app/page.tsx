@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import CarouselCards from "@/components/CarouselCards";
-import DropDown from "@/components/DropDown";
 
 export default function Home() {
   return (
@@ -12,6 +11,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Projects />
+      <CardsContainer />
       <CarouselCards />
       <DropDown />
     </main>
