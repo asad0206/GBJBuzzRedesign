@@ -23,18 +23,24 @@ interface CardsContainerProps {
 
 const CardsContainer: React.FC<CardsContainerProps> = () => {
   return (
-    <div className="flex flex-wrap ">
-      {[...Array(4)].map((_, index) => (
-        <Cards
-          key={index}
-          cardTitle={`0${index + 1}`}
-          cardImage={`/revolutionize${index + 1}.png`}
-          cardContent={getContentByIndex(index)}
-          additionalContent={getadditionalContentByIndex(index)}
-          index={index}
-        />
-      ))}
+    <div>
+        <p className="text-center p-8 font-bold text-2xl md:text-5xl">Grow Your Business At Junction</p>
+        <div className="flex flex-wrap items-center justify-center">
+        
+        {[...Array(4)].map((_, index) => (
+          <Cards
+            key={index}
+            cardTitle={`0${index + 1}`}
+            cardImage={`/revolutionize${index + 1}.png`}
+            cardContent={getContentByIndex(index)}
+            additionalContent={getadditionalContentByIndex(index)}
+            index={index}
+          />
+        ))}
+      </div>
+        
     </div>
+    
   );
 };
 
@@ -43,9 +49,9 @@ const Cards: React.FC<CardsProps> = ({ cardTitle, cardImage, cardContent, additi
     const isEven = index % 2 === 0;
   
     return (
-      <Card className={`mx-2 mb-4 w-full p-10 m-10 md:w-72 ${isEven ? "bg-white" : "bg-[#FFC900]"} group`}>
+      <Card className={`mx-2 mb-4 w-full m-10 md:w-72 m-2 ${isEven ? "bg-white" : "bg-[#FFC900]"} group`}>
         <CardHeader>
-          <CardTitle>{cardTitle}</CardTitle>
+          <CardTitle className="text-3xl">{cardTitle}</CardTitle>
           <CardDescription className="flex items-center justify-center opacity-100 ">
             <Image
               src={cardImage}
@@ -55,11 +61,10 @@ const Cards: React.FC<CardsProps> = ({ cardTitle, cardImage, cardContent, additi
               className="group-hover:opacity-0 transition-opacity"
             />
           </CardDescription>
-          <p className="additional-content opacity-0 transition-opacity group-hover:opacity-100">{additionalContent}</p>
+          <p className="opacity-0 transition-opacity group-hover:opacity-100 text-center justify-center">{additionalContent}</p>
+          <p className="opacity-100 group-hover:opacity-0 transition-opacity text-center text-2xl bold">{cardContent}</p>
+
         </CardHeader>
-        <CardContent className="text-center">
-          <p className="normal-content opacity-100 group-hover:opacity-0 transition-opacity">{cardContent}</p>
-        </CardContent>
       </Card>
     );
   };
