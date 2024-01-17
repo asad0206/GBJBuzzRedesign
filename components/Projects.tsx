@@ -10,7 +10,7 @@ export default function Projects() {
             {/* add hover effect to the span */}
           Discover exclusive deals and seize lucrative <span>opportunities.</span>
         </div>
-        <p className="text-zinc-500 text-xl text-justify">
+        <p className="text-zinc-500 text-lg text-justify w-5/6">
           GBJ Buzz’s commitment lies in propelling enterprises forward in the
           digital landscape. We distinguish ourselves from the market by
           delivering cutting-edge IT services & consistently staying abreast of
@@ -20,7 +20,7 @@ export default function Projects() {
 
       <div className="flex">
         {/* left element */}
-        <div className="w-3/4 pr-2">
+        <div className="w-[65%] pr-2">
           <Image
             src="/image.png"
             alt="logo"
@@ -30,15 +30,15 @@ export default function Projects() {
           />
         </div>
         {/* right element */}
-        <div className="w-1/4 bg-black rounded-[40px] p-10 ml-auto">
+        <div className="w-[33%] bg-black rounded-[40px] p-10 ml-auto">
           <div className="flex justify-center space-x-2">
             <span className="text-white text-[96px] font-semibold">920</span>
             <span className="text-yellow-400 text-[96px] font-semibold">+</span>
           </div>
-          <div className="text-zinc-400 text-xl font-semibold flex justify-center p-10">
+          <div className="text-zinc-400 text-xl font-semibold flex justify-center">
             Projects finished till now
           </div>
-          <div className="flex items-center justify-center p-2">
+          <div className="flex items-center justify-center p-6">
             <Image
               src="/Automobile.png"
               alt="logo"
