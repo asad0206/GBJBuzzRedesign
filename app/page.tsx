@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import CarouselCards from "@/components/CarouselCards";
+import CardsContainer from "@/components/Cards";
 import DropDown from "@/components/DropDown";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Projects />
+      <CardsContainer />
       <CarouselCards />
       <DropDown />
     </main>
