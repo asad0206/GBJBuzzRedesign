@@ -58,7 +58,7 @@ function Hero() {
               </HoverCardContent>
             </HoverCard>
           </CardFooter>
-          <CardFooter className="flex justify drelative gap-4">
+          <CardFooter className="flex justify relative gap-4">
             <Image src="/google-logo.svg" alt="google" width="64" height="22" />
             <Image
               src="/facebook-logo.svg"
