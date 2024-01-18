@@ -48,9 +48,11 @@ export default function CarouselCards() {
                 />
               </CardHeader>
               <CardContent className="justify justify-center items-center text-center">
-                "A reliable partner in our business development, Their
-                team&apos;s dedication to understanding our business and
-                delivering unique solutions sets them apart"
+                <p>
+                  &quot;A reliable partner in our business development, Their
+                  team&apos;s dedication to understanding our business and
+                  delivering unique solutions sets them apart&quot;
+                </p>
               </CardContent>
             </Card>
           </CarouselItem>
@@ -67,9 +69,9 @@ export default function CarouselCards() {
               </CardHeader>
               <CardContent className="justify justify-center text-center">
                 <p>
-                  "Results-driven professionals! The team consistently analyzes
-                  data, making strategic adjustments that keep our marketing
-                  campaigns effective."
+                  &quot;Results-driven professionals! The team consistently
+                  analyzes data, making strategic adjustments that keep our
+                  marketing campaigns effective.&quot;
                 </p>
               </CardContent>
             </Card>
@@ -87,9 +89,9 @@ export default function CarouselCards() {
               </CardHeader>
               <CardContent className="justify justify-center text-center">
                 <p>
-                  "Our social media presence has never been stronger. The
+                  &quot;Our social media presence has never been stronger. The
                   team&apos;s social media marketing strategies are on point,
-                  engaging our audience effectively."
+                  engaging our audience effectively.&quot;
                 </p>
               </CardContent>
             </Card>
