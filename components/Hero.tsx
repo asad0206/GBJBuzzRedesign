@@ -2,6 +2,8 @@
 
 import React from "react";
 
+import Image from "next/image";
+
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import {
@@ -10,6 +12,8 @@ import {
   HoverCard,
 } from "@/components/ui/hover-card";
 import { ResponsiveBar } from "@nivo/bar";
+
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 export default function Hero() {
   return (
@@ -27,7 +31,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
             <Button className="bg-black text-white px-6 py-3 rounded-full flex items-center justify-between">
               Schedule Call
-              <ArrowRightIcon className="ml-2" />
+              <ArrowRightIcon className="mx-2 w-5 h-5" />
             </Button>
             <HoverCard>
               <HoverCardTrigger asChild>
@@ -45,7 +49,7 @@ export default function Hero() {
               </HoverCardContent>
             </HoverCard>
           </div>
-          <div className="space-x-4 items-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+          <div className="items-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
             <img
               alt="Google"
               className="h-6"
@@ -125,26 +129,6 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  );
-}
-
-function ArrowRightIcon(props: any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M5 12h14" />
-      <path d="m12 5 7 7-7 7" />
-    </svg>
   );
 }
 

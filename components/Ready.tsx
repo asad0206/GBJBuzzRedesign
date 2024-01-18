@@ -3,19 +3,24 @@ import { Button } from "@/components/ui/button";
 
 export default function Ready() {
   return (
-    <div className="bg-[#0c0c0c] py-4 px-6 md:px-12 lg:px-24 xl:px-48 2xl:px-72 rounded-2xl mt-7">
+    <div className="bg-[#0c0c0c] bg-[url('/rocket-image.svg')] bg-no-repeat bg-cover py-4 px-6 md:px-12 lg:px-24 xl:px-48 2xl:px-72 rounded-2xl mt-7">
       <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="flex flex-col mb-4 md:mb-0">
-          <h2 className="text-white text-2xl font-bold leading-tight mb-2">
+          <h2 className="text-white text-3xl font-bold leading-tight mb-2">
             Ready to work with us?
           </h2>
-          <Button className="bg-[#FFC900] text-black hover:bg-white">
-            Get Quote
-          </Button>
+          <div>
+            <Button
+              size="lg"
+              className="bg-[#FFC900] text-black hover:bg-white"
+            >
+              Get Quote
+            </Button>
+          </div>
         </div>
-        <div className="flex space-x-4 items-end">
-          <MoonStarIcon className="sm:w-12 sm:h-12 md:w-32 md:h-32 text-white animate-pulse" />
-          <RocketIcon className="sm:w-12 sm:h-12 md:w-24 md:h-24 text-white animate-bounce" />
+        <div className="visible lg:invisible flex space-x-4 items-end sm:invsible ">
+          <MoonStarIcon className=" sm:w-12 sm:h-12 md:w-32 md:h-32 text-white animate-pulse" />
+          <RocketIcon className=" sm:w-12 sm:h-12 md:w-24 md:h-24 text-white animate-bounce" />
         </div>
       </div>
     </div>
