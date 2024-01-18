@@ -16,13 +16,13 @@ import { Divider } from "@nextui-org/react";
 
 function Frequent() {
   return (
-    <div className="p-10">
+    <div className="p-10 w-full">
       <Card>
         <CardContent className="mx-3 justify justify-center items-center flex flex-col md:flex-row">
-          <div className="w-1/2">
+          <div className="md:w-1/2">
             <Questions />
           </div>
-          <div className="w-1/2">
+          <div className="md:w-1/2">
             <DropDown />
           </div>
         </CardContent>

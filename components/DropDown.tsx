@@ -17,7 +17,7 @@ const DropDown: React.FC = () => {
       <Accordion type="single" defaultValue="item-1" collapsible>
         {dropData.map((dropData) => (
           <AccordionItem value={dropData.val}>
-            <AccordionTrigger className="text-base md:text-2xl font-bold">
+            <AccordionTrigger className="text-sm md:text-xl font-bold">
               {dropData.text}
             </AccordionTrigger>
             <AccordionContent className="font-extralight text-slate-500 text-pretty text-xs md:text-base">
