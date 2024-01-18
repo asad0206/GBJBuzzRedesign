@@ -20,7 +20,7 @@ const DropDown: React.FC = () => {
             <AccordionTrigger className="text-base md:text-2xl font-bold">
               {dropData.text}
             </AccordionTrigger>
-            <AccordionContent className="font-extralight text-pretty text-sm md:text-base">
+            <AccordionContent className="font-extralight text-slate-500 text-pretty text-xs md:text-base">
               {dropData.desc}
             </AccordionContent>
           </AccordionItem>

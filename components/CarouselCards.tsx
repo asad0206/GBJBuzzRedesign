@@ -37,14 +37,14 @@ export default function CarouselCards() {
       >
         <CarouselContent>
           <CarouselItem>
-            <Card className="justify-center items-center">
+            <Card className="justify-center items-center h-full">
               <CardHeader>
                 <Image
                   src="/hoora.svg"
                   alt="Hoora"
                   width="175"
                   height="50"
-                  className="sm:py-5 flex items-center self-center sm:mt-4 sm:mb-10 sm:block w-52 tab:w-40 sm:w-44 mx-auto"
+                  className="object-contain sm:py-5 flex items-center self-center sm:mt-4 sm:mb-10 sm:block w-52 tab:w-40 sm:w-44 mx-auto"
                 />
               </CardHeader>
               <CardContent className="justify justify-center items-center text-center">
@@ -62,12 +62,12 @@ export default function CarouselCards() {
                   alt="The Bliss Events"
                   width="175"
                   height="50"
-                  className="sm:py-5 flex items-center self-center sm:mt-4 sm:mb-10 sm:block w-52 tab:w-40 sm:w-44 mx-auto"
+                  className="object-contain sm:py-5 flex items-center self-center sm:mt-4 sm:mb-10 sm:block w-52 tab:w-40 sm:w-44 mx-auto"
                 />
               </CardHeader>
               <CardContent className="justify justify-center text-center">
                 <p>
-                  Results-driven professionals! The team consistently analyzes
+                  "Results-driven professionals! The team consistently analyzes
                   data, making strategic adjustments that keep our marketing
                   campaigns effective."
                 </p>
@@ -82,7 +82,7 @@ export default function CarouselCards() {
                   alt="My Fit Meals"
                   width="175"
                   height="50"
-                  className="sm:py-5 flex items-center self-center sm:mt-4 sm:mb-10 sm:block w-52 tab:w-40 sm:w-44 mx-auto"
+                  className="object-contain sm:py-5 flex items-center self-center sm:mt-4 sm:mb-10 sm:block w-52 tab:w-40 sm:w-44 mx-auto"
                 />
               </CardHeader>
               <CardContent className="justify justify-center text-center">

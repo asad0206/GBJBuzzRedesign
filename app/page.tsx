@@ -5,7 +5,7 @@ import Link from "next/link";
 import Hero from "@/components/Hero";
 import CarouselCards from "@/components/CarouselCards";
 import CardsContainer from "@/components/Cards";
-import DropDown from "@/components/DropDown";
+import Frequent from "@/components/Frequent";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <Projects />
       <CardsContainer />
       <CarouselCards />
-      <DropDown />
+      <Frequent />
     </main>
   );
 }
