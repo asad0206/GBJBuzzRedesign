@@ -4,8 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import CarouselCards from "@/components/CarouselCards";
-import CardsContainer from "@/components/Cards";
+import CardsContainer from "@/components/CardsContainer";
 import DropDown from "@/components/DropDown";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Projects />
+      <Services />
       <CardsContainer />
       <CarouselCards />
       <DropDown />
