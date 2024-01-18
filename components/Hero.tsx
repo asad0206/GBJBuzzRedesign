@@ -45,15 +45,15 @@ export default function Hero() {
               </HoverCardContent>
             </HoverCard>
           </div>
-          <div className="flex space-x-4 items-center">
+          <div className="space-x-4 items-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
             <img
               alt="Google"
               className="h-6"
               height="24"
-              src="/placeholder.svg"
+              src="/google-logo.svg"
               style={{
                 aspectRatio: "72/24",
-                objectFit: "cover",
+                objectFit: "contain",
               }}
               width="72"
             />
@@ -61,10 +61,10 @@ export default function Hero() {
               alt="Facebook"
               className="h-6"
               height="24"
-              src="/placeholder.svg"
+              src="/facebook-logo.svg"
               style={{
                 aspectRatio: "72/24",
-                objectFit: "cover",
+                objectFit: "contain",
               }}
               width="72"
             />
@@ -72,10 +72,10 @@ export default function Hero() {
               alt="Microsoft"
               className="h-6"
               height="24"
-              src="/placeholder.svg"
+              src="/microsoft-logo.svg"
               style={{
                 aspectRatio: "72/24",
-                objectFit: "cover",
+                objectFit: "contain",
               }}
               width="72"
             />
@@ -83,10 +83,10 @@ export default function Hero() {
               alt="Adobe"
               className="h-6"
               height="24"
-              src="/placeholder.svg"
+              src="/adobe-logo.svg"
               style={{
                 aspectRatio: "72/24",
-                objectFit: "cover",
+                objectFit: "contain",
               }}
               width="72"
             />
@@ -94,10 +94,10 @@ export default function Hero() {
               alt="Salesforce"
               className="h-6"
               height="24"
-              src="/placeholder.svg"
+              src="/salesforce-logo.svg"
               style={{
                 aspectRatio: "72/24",
-                objectFit: "cover",
+                objectFit: "contain",
               }}
               width="72"
             />
@@ -118,10 +118,10 @@ export default function Hero() {
               <p className="text-base text-gray-500">
                 Major clients, earning their profound trust and collaboration.
               </p>
-              <div className="w-full h-1 bg-[#FFA500] mt-2" />
+              <div className="w-full h-1 bg-[#FFC900] mt-2" />
             </div>
           </div>
-          <BarChart className="w-full h-[300px]" />
+          <BarChart className="w-full h-[300px] bg-slate-200 rounded-md" />
         </div>
       </div>
     </section>
@@ -164,7 +164,7 @@ function BarChart(props: any) {
         indexBy="name"
         margin={{ top: 0, right: 0, bottom: 40, left: 40 }}
         padding={0.3}
-        colors={["#2563eb"]}
+        colors={["#FFC900"]}
         axisBottom={{
           tickSize: 0,
           tickPadding: 16,

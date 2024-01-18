@@ -9,13 +9,13 @@ export default function Ready() {
           <h2 className="text-white text-2xl font-bold leading-tight mb-2">
             Ready to work with us?
           </h2>
-          <Button className="bg-[#FFD700] text-black hover:bg-white">
+          <Button className="bg-[#FFC900] text-black hover:bg-white">
             Get Quote
           </Button>
         </div>
         <div className="flex space-x-4 items-end">
-          <MoonStarIcon className="sm:w-12 sm:h-12 md:w-32 md:h-32 text-white" />
-          <RocketIcon className="sm:w-12 sm:h-12 md:w-24 md:h-24 text-white" />
+          <MoonStarIcon className="sm:w-12 sm:h-12 md:w-32 md:h-32 text-white animate-pulse" />
+          <RocketIcon className="sm:w-12 sm:h-12 md:w-24 md:h-24 text-white animate-bounce" />
         </div>
       </div>
     </div>
