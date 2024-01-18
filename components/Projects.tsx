@@ -9,7 +9,8 @@ export default function Projects() {
         {/* div one */}
         <div className="text-neutral-900 text-2xl md:text-5xl font-semibold text-left">
           {/* add hover effect to the span */}
-          Discover exclusive deals and seize lucrative <span>opportunities.</span>
+          Discover exclusive deals and seize lucrative{" "}
+          <span>opportunities.</span>
         </div>
         {/* div two */}
         <p className="text-zinc-500 text-sm md:text-lg text-justify w-full md:w-5/6">
@@ -36,8 +37,12 @@ export default function Projects() {
         {/* div four */}
         <div className="w-full md:w-[33%] bg-black rounded-[40px] p-5 md:p-10 mt-5 md:mt-0">
           <div className="flex flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-2">
-            <span className="text-white text-[48px] md:text-[96px] font-semibold">920</span>
-            <span className="text-yellow-400 text-[48px] md:text-[96px] font-semibold">+</span>
+            <span className="text-white text-[48px] md:text-[96px] font-semibold">
+              920
+            </span>
+            <span className="text-yellow-400 text-[48px] md:text-[96px] font-semibold">
+              +
+            </span>
           </div>
           <div className="text-zinc-400 text-sm md:text-xl font-semibold flex justify-center mt-2 md:mt-6">
             Projects finished till now
@@ -71,7 +76,9 @@ export default function Projects() {
               height={64}
               className="rounded-3xl filter grayscale"
             />
-            <span className="text-white text-[24px] md:text-[40px] font-semibold mt-2 md:mt-0">+</span>
+            <span className="text-white text-[24px] md:text-[40px] font-semibold mt-2 md:mt-0">
+              +
+            </span>
           </div>
         </div>
       </div>

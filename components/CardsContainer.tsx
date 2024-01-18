@@ -24,9 +24,10 @@ interface CardsContainerProps {
 const CardsContainer: React.FC<CardsContainerProps> = () => {
   return (
     <div>
-        <p className="text-center p-8 font-bold text-2xl md:text-5xl">Grow Your Business At Junction</p>
-        <div className="flex flex-wrap items-center justify-center">
-        
+      <p className="text-center p-8 font-bold text-2xl md:text-5xl">
+        Grow Your Business At Junction
+      </p>
+      <div className="flex flex-wrap items-center justify-center">
         {[...Array(4)].map((_, index) => (
           <Cards
             key={index}
@@ -38,38 +39,46 @@ const CardsContainer: React.FC<CardsContainerProps> = () => {
           />
         ))}
       </div>
-        
     </div>
-    
   );
 };
 
+const Cards: React.FC<CardsProps> = ({
+  cardTitle,
+  cardImage,
+  cardContent,
+  additionalContent,
+  index,
+}) => {
+  const isEven = index % 2 === 0;
 
-const Cards: React.FC<CardsProps> = ({ cardTitle, cardImage, cardContent, additionalContent, index }) => {
-    const isEven = index % 2 === 0;
-  
-    return (
-      <Card className={`mx-2 mb-4 w-full m-10 md:w-72 m-2 ${isEven ? "bg-white" : "bg-[#FFC900]"} group`}>
-        <CardHeader>
-          <CardTitle className="text-3xl">{cardTitle}</CardTitle>
-          <CardDescription className="flex items-center justify-center opacity-100 ">
-            <Image
-              src={cardImage}
-              alt="logo"
-              width={96}  
-              height={96} 
-              className="group-hover:opacity-0 transition-opacity"
-            />
-          </CardDescription>
-          <p className="opacity-0 transition-opacity group-hover:opacity-100 text-center justify-center">{additionalContent}</p>
-          <p className="opacity-100 group-hover:opacity-0 transition-opacity text-center text-2xl bold">{cardContent}</p>
-
-        </CardHeader>
-      </Card>
-    );
-  };
-  
-  
+  return (
+    <Card
+      className={`mx-2 mb-4 w-full m-10 md:w-72 m-2 ${
+        isEven ? "bg-white" : "bg-[#FFC900]"
+      } group`}
+    >
+      <CardHeader>
+        <CardTitle className="text-3xl">{cardTitle}</CardTitle>
+        <CardDescription className="flex items-center justify-center opacity-100 ">
+          <Image
+            src={cardImage}
+            alt="logo"
+            width={96}
+            height={96}
+            className="group-hover:opacity-0 transition-opacity"
+          />
+        </CardDescription>
+        <p className="opacity-0 transition-opacity group-hover:opacity-100 text-center justify-center">
+          {additionalContent}
+        </p>
+        <p className="opacity-100 group-hover:opacity-0 transition-opacity text-center text-2xl bold">
+          {cardContent}
+        </p>
+      </CardHeader>
+    </Card>
+  );
+};
 
 const getContentByIndex = (index: number): string => {
   switch (index) {
@@ -83,26 +92,22 @@ const getContentByIndex = (index: number): string => {
       return "Innovate";
     default:
       return "";
-  };
+  }
 };
 
 const getadditionalContentByIndex = (index: number): string => {
-    switch (index) {
-      case 0:
-        return "We lead the market, driving your client's business forward.";
-      case 1:
-        return "Optimize for maximum efficiency in business operations.";
-      case 2:
-        return "Leverage Al for enhanced performance.";
-      case 3:
-        return "Adapt to the ever-evolving technology landscape.";
-      default:
-        return "";
-    };
-  };
-
+  switch (index) {
+    case 0:
+      return "We lead the market, driving your client's business forward.";
+    case 1:
+      return "Optimize for maximum efficiency in business operations.";
+    case 2:
+      return "Leverage Al for enhanced performance.";
+    case 3:
+      return "Adapt to the ever-evolving technology landscape.";
+    default:
+      return "";
+  }
+};
 
 export default CardsContainer;
-
-
-

@@ -19,16 +19,16 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="realtive justify-center p-10">
+    <div className="w-full realtive justify-center">
       <div>
-        <Card className="flex justify flex-col">
+        <Card className="w-full flex justify flex-col">
           <CardHeader>
-            <CardTitle className="font-semibold justify text-7xl">
+            <CardTitle className="font-semibold justify text-xl md:text-7xl">
               <p>Supercharge your</p>
               <p>Business Growth</p>
             </CardTitle>
           </CardHeader>
-          <CardContent className="font-medium justify text-xl text-pretty max-w-prose">
+          <CardContent className="font-medium justify text-sm md:text-xl text-wrap">
             <p>
               We&apos;re a top business devlopment firm, experts in crafting
               SaaS & PaaS solutions.
@@ -38,20 +38,17 @@ function Hero() {
             </p>
           </CardContent>
           <CardFooter className="flex justify">
-            <Button className="flex gird grid-cols-2 gap-2 rounded-full md:size-auto justify max-w-prose hover:bg-[#FFC900] hover:text-black">
+            <Button className="hover:bg-[#FFC900] hover:text-black">
               Schedule a call
               <ArrowRightIcon className="h-4 w-4" />
             </Button>
             <HoverCard>
               <HoverCardTrigger>
-                <Button
-                  variant="link"
-                  className="underline justify underline-offset-4 md:size-auto max-w-prose"
-                >
+                <Button variant="link" className="underline-offset-4">
                   Let&apos;s Act Now
                 </Button>
               </HoverCardTrigger>
-              <HoverCardContent className="text-sm justify text-pretty max-w-prose">
+              <HoverCardContent className="text-sm text-wrap">
                 Seize the moment with decisive action! Let&apos;s act now to
                 create a future of possibilities and positive change. Embrace
                 the power of action and make a lasting impact.

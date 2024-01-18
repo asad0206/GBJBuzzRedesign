@@ -23,7 +23,7 @@ export default function CarouselCards() {
   const plugin = React.useRef(Autoplay({ delay: 3000 }));
 
   return (
-    <div>
+    <div className="justify-center items-center ">
       <p className="text-center p-8 font-bold text-2xl md:text-5xl">
         Companies We&apos;ve Fueled to New Heights.
       </p>

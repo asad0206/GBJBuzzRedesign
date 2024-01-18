@@ -12,22 +12,26 @@ import React from "react";
 
 import Questions from "./Questions";
 import DropDown from "./DropDown";
-import { Divider } from "@nextui-org/react";
+import { Button } from "@/components/ui/button";
 
 function Frequent() {
   return (
-    <div className="p-10 w-full">
-      <Card>
-        <CardContent className="mx-3 justify justify-center items-center flex flex-col md:flex-row">
-          <div className="md:w-1/2">
-            <Questions />
+    <Card className="mt-6 w-full">
+      <CardContent className="mx-3 justify justify-center items-center flex flex-col md:flex-row">
+        <div className="md:w-1/2">
+          <Questions />
+          <div className="mt-3 justify-around">
+            <Button className="rounded-3xl bg-[#FFC900] hover:bg-white text-black">
+              More Questions
+            </Button>
+            <Button variant="link">Contact Us</Button>
           </div>
-          <div className="md:w-1/2">
-            <DropDown />
-          </div>
-        </CardContent>
-      </Card>
-    </div>
+        </div>
+        <div className="sm:mt-2 md:my-2 md:w-1/2">
+          <DropDown />
+        </div>
+      </CardContent>
+    </Card>
   );
 }
 
