@@ -9,6 +9,7 @@ import DropDown from "@/components/DropDown";
 import Services from "@/components/Services";
 import Frequent from "@/components/Frequent";
 import Business from "@/components/Business";
+import Ready from "@/components/Ready";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <CarouselCards />
       <Frequent />
       <Business />
+      <Ready />
     </main>
   );
 }
