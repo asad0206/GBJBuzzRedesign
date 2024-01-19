@@ -10,6 +10,7 @@ import Services from "@/components/Services";
 import Frequent from "@/components/Frequent";
 import Business from "@/components/Business";
 import Ready from "@/components/Ready";
+import Stories from "@/components/Stories";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Frequent />
       <Business />
       <Ready />
+      <Stories />
     </main>
   );
 }

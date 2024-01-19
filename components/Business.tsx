@@ -8,7 +8,7 @@ function Business() {
     <div className="mt-10 w-full justify-between md:flex md:flex-row">
       <div className="md:w-1/2">
         <p className="text-2xl md:text-5xl text-wrap font-medium ">
-          <span className="bg-[#FFC900] rounded-2xl">
+          <span className="bg-[#FFC900] rounded-lg">
             Strategic Business Growth
           </span>{" "}
           Solutions and IT Innovations for Driving Revenue.

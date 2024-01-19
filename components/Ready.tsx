@@ -9,14 +9,9 @@ export default function Ready() {
           <h2 className="text-white text-3xl font-bold leading-tight mb-2">
             Ready to work with us?
           </h2>
-          <div>
-            <Button
-              size="lg"
-              className="bg-[#FFC900] text-black hover:bg-white"
-            >
-              Get Quote
-            </Button>
-          </div>
+          <Button className="bg-[#FFC900] text-black hover:bg-white">
+            Get Quote
+          </Button>
         </div>
         <div className="visible lg:invisible flex space-x-4 items-end sm:invsible ">
           <MoonStarIcon className=" sm:w-12 sm:h-12 md:w-32 md:h-32 text-white animate-pulse" />
